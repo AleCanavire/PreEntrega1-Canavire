@@ -4,9 +4,9 @@ function NavBar() {
   return (
     <nav className='nav'>
       <div className='navContainer'>
-        <img className='meliLogo' src='/img/meliLogo.png' alt='Logo Mercado Libre'></img>
+        <img className='meliLogo' src='./img/meliLogo.png' alt='Logo Mercado Libre'></img>
         <div className='location'>
-          <img src='/img/location.svg'></img>
+          <img src='./img/location.svg'></img>
           <span>Enviar a</span>
           <p>Capital Federal</p>
         </div>
@@ -14,7 +14,7 @@ function NavBar() {
           <form>
             <input placeholder='Buscar productos, marcas y más...'></input>
             <button>
-              <img src='/img/search.svg'></img>
+              <img src='./img/search.svg'></img>
             </button>
           </form>
         </div>
@@ -29,7 +29,7 @@ function NavBar() {
             <li><span>Ayuda</span></li>
           </ul>
         </div>
-        <img className='disney' src='/img/disneyStar.webp'></img>
+        <img className='disney' src='./img/disneyStar.webp'></img>
         <div className='account'>
           <ul>
             <li><span>Creá  tu cuenta</span></li>

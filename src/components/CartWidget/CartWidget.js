@@ -1,6 +1,6 @@
 function CartWidget() {
     return (
-        <img src="/img/cart.svg"></img>
+        <img src="./img/cart.svg"></img>
     )
 }
 
