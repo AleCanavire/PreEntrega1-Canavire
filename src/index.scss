@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+// reset
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.App{
+  min-height: 101vh;
+  background-color: #ebebeb;
+}
+
+@import '/src/components/NavBar/NavBar';
+@import '/src/components/ItemListContainer/ItemListContainer';
