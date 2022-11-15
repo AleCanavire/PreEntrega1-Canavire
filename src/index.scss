@@ -1,16 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./font/proximanova-light.woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./font/proximanova-regular.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./font/proximanova-semibold.woff2");
+  font-weight: 700;
+}
+
 // reset
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Proxima Nova", sans-serif;
 }
-.App{
-  min-height: 101vh;
+body{
   background-color: #ebebeb;
+  min-height: 101vh
 }
 
 @import '/src/components/NavBar/NavBar';
-@import '/src/components/ItemListContainer/ItemListContainer';
+@import '/src/components/ItemListContainer/ItemList';
+@import '/src/components/ItemListContainer/Item';
+@import '/src/components/ItemDetailContainer/itemDetail'

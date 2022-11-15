@@ -2,11 +2,12 @@
     background-color: #fff159;
     width: 100%;
     height: 100px;
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
     .navContainer{
         max-width: 1200px;
         height: 100%;
         margin: 0 auto;
-        padding: 7px 0 12px 0;
+        padding-top: 6px;
         display: grid;
         align-items: center;
         justify-content: center;
@@ -14,16 +15,20 @@
         grid-template-areas:
         "logo search disney"
         "location categories account";
-        .meliLogo{
-            grid-area: logo;
-            margin: 0 50px 0 10px;
+        a{
+            display: contents;
+            .meliLogo{
+                grid-area: logo;
+                margin: 0 50px 0 10px;
+                cursor: pointer;
+            }
         }
         .location{
             grid-area: location;
             width: 134px;
             height: 40px;
             padding: 4px 8px;
-            margin-right: 60px;
+            margin: 0 60px 5px 0;
             position: relative;
             cursor: pointer;
             &:hover{
@@ -35,19 +40,25 @@
                 width: 18px;
                 position: absolute;
                 left: 8px;
-                top: 8px;
+                top: 6px;
             }
-            span{
-                color: rgba(0, 0, 0, .8);
-                padding-left: 22px;
-                font-size: 10.5px;
-                font-weight: 400;
-            }
-            p{
-                color: #333;
-                padding-left: 22px;
-                font-size: 12px;
-                font-weight: 500;
+            .envio{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                span{
+                    color: rgba(0, 0, 0, .5);
+                    padding-left: 22px;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+                p{
+                    color: #333;
+                    padding-left: 23px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 12px;
+                }
             }
         }
         .search{
@@ -67,7 +78,7 @@
                     border: none;
                     &::placeholder{
                         color: rgba(0, 0, 0, .2);
-                        font-size: 14px;
+                        font-size: 16px;
                         font-weight: 500;
                     }
                     &:focus-visible{
@@ -105,12 +116,75 @@
             align-items: flex-end;
             ul{
                 display: flex;
-                gap: 20px;
+                gap: 18px;
+                padding-bottom: 10px;
+                li:first-child{
+                    position: relative;
+                    width: 80px;
+                    cursor: pointer;
+                    &:hover > .allCategories{
+                        visibility: visible;
+                    }
+                    &::before{
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        position: absolute;
+                        right: 0;
+                        color: rgba(0,0,0,.3);
+                        border-style: solid;
+                        border-width: 0 1.5px 1.5px 0;
+                        margin: 9px 0 0 6px;
+                        transform: rotate(45deg);
+                        box-sizing: border-box;
+                    }
+                    .allCategories{
+                        background-color: #333;
+                        position: absolute;
+                        top: 30px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 257px;
+                        padding: 22px 0;
+                        border-radius: 4px;
+                        z-index: 3;
+                        visibility: hidden;
+                        cursor: default;
+                        transition-delay: 0.1s;
+                        transition-property: visibility;
+                        &:hover{
+                            visibility: visible;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 155px;
+                            transform: rotate(180deg) translateY(100%);
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-top: 8px solid #333;
+                        }
+                        a{
+                            color: #fff;
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 36px;
+                            text-decoration: none;
+                            padding: 0 36px;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #3483fa;
+                            }
+                        }
+                    }
+                }
                 li{
                     list-style: none;
                     span{
                         color: rgba(51, 51, 51, .6);
-                        font-size: 12.5px;
+                        font-size: 14px;
                         font-weight: 500;
                         transition: 300ms color ease;
                         cursor: pointer;
@@ -141,11 +215,12 @@
                 align-items: flex-end;
                 justify-content: end;
                 gap: 20px;
+                padding-bottom: 10px;
                 li{
                     list-style: none;
                     span{
                         color: #333;
-                        font-size: 12px;
+                        font-size: 14px;
                         line-height: 10px;
                         font-weight: 500;
                         cursor: pointer;
@@ -158,6 +233,7 @@
                     height: 20px;
                     width: 20px;
                     margin-right: 10px;
+                    margin-bottom: 4px;
                     cursor: pointer;
                 }
             }

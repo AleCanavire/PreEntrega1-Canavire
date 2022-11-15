@@ -1,6 +1,8 @@
+import cart from '../../assets/img/cart.svg';
+
 function CartWidget() {
     return (
-        <img src="./img/cart.svg"></img>
+        <img src={cart}></img>
     )
 }
 
