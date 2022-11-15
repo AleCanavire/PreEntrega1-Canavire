@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PreEntrega1-Canavire/static/css/main.d8d2aac5.css",
-    "main.js": "/PreEntrega1-Canavire/static/js/main.86490f2b.js",
+    "main.js": "/PreEntrega1-Canavire/static/js/main.2b77069c.js",
     "static/js/787.b701888c.chunk.js": "/PreEntrega1-Canavire/static/js/787.b701888c.chunk.js",
     "static/media/proximanova-light.woff2": "/PreEntrega1-Canavire/static/media/proximanova-light.0029417e7bf70872da0b.woff2",
     "static/media/proximanova-regular.woff2": "/PreEntrega1-Canavire/static/media/proximanova-regular.83259c64b968610cd01d.woff2",
@@ -12,11 +12,11 @@
     "static/media/search.svg": "/PreEntrega1-Canavire/static/media/search.78190d77dd86eac10d2dd47cce27b4bf.svg",
     "index.html": "/PreEntrega1-Canavire/index.html",
     "main.d8d2aac5.css.map": "/PreEntrega1-Canavire/static/css/main.d8d2aac5.css.map",
-    "main.86490f2b.js.map": "/PreEntrega1-Canavire/static/js/main.86490f2b.js.map",
+    "main.2b77069c.js.map": "/PreEntrega1-Canavire/static/js/main.2b77069c.js.map",
     "787.b701888c.chunk.js.map": "/PreEntrega1-Canavire/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8d2aac5.css",
-    "static/js/main.86490f2b.js"
+    "static/js/main.2b77069c.js"
   ]
 }
