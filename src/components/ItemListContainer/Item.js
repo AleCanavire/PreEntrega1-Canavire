@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Item(props) {
-  const url = `/detail/${props.url}`
+  const url = `/PreEntrega1-Canavire/detail/${props.url}`
   return (
     <div className='itemCard'>
       <div className='item'>

@@ -21,7 +21,7 @@ function ItemList(props) {
     <div className="recommendations">
       <div className="sectionTitle">
         <h3>{props.sectionTitle}</h3>
-        <Link to="/">Ver todos</Link>
+        <Link to="#">Ver todos</Link>
       </div>
       
       <div className="itemsContainer">

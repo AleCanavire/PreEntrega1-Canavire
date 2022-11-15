@@ -44,7 +44,7 @@ function ItemDetailContainer() {
       </div>
       <div className="categoryShare">
         <div className="category">
-          <Link to="/">Volver al listado</Link><span>{category}</span>  
+          <Link to="/PreEntrega1-Canavire/">Volver al listado</Link><span>{category}</span>  
         </div>
         <div className="share">
           <p>Compartir</p><span>Vender uno igual</span>

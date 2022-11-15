@@ -7,9 +7,9 @@ function ItemListContainer() {
   if (idCategory == undefined) {
     return(
       <>
-        <ItemList url="products" sectionTitle="Ofertas" urlCategory="/category/ofertas"/>
-        <ItemList url="products/category/electronics" sectionTitle="Tecnología" urlCategory="category/tecnología"/>
-        <ItemList url="products/category/women's%20clothing" sectionTitle="Mujer" urlCategory="category/ropa-mujer"/>
+        <ItemList url="products" sectionTitle="Ofertas"/>
+        <ItemList url="products/category/electronics" sectionTitle="Tecnología"/>
+        <ItemList url="products/category/women's%20clothing" sectionTitle="Mujer"/>
       </>
     )
   } else if (idCategory == "tecnología") {
@@ -26,7 +26,7 @@ function ItemListContainer() {
     ) 
   } else if(idCategory == "joyería"){
     return (
-      <ItemList url="products/category/jewelery" sectionTitle="Joyería" urlCategory="category/joyería"/>
+      <ItemList url="products/category/jewelery" sectionTitle="Joyería"/>
     ) 
   }
 }
