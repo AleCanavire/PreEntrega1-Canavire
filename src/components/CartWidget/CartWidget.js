@@ -2,7 +2,11 @@ import cart from '../../assets/img/cart.svg';
 
 function CartWidget() {
     return (
-        <img src={cart}></img>
+        <div className='cartWidget'>
+            <img src={cart}></img>
+            <span>1</span>
+        </div>
+        
     )
 }
 
