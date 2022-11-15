@@ -10,9 +10,9 @@ function App() {
         <NavBar />
         <main className="mainHome">
           <Routes>
-            <Route path='/' element={<ItemListContainer/>}/>
-            <Route path='/category/:idCategory' element={<ItemListContainer/>}/>
-            <Route path='/detail/:id' element={<ItemDetailContainer/>}/>
+            <Route path='PreEntrega1-Canavire/' element={<ItemListContainer/>}/>
+            <Route path='PreEntrega1-Canavire/category/:idCategory' element={<ItemListContainer/>}/>
+            <Route path='PreEntrega1-Canavire/detail/:id' element={<ItemDetailContainer/>}/>
           </Routes>
         </main>
       </div>
