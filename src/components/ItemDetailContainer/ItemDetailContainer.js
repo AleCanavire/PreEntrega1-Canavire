@@ -1,41 +1,29 @@
 import React, { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetailContainer/ItemDetail";
 import { useParams, Link } from "react-router-dom";
+import { getSingleItem } from "../../services/mockService"
 
 function ItemDetailContainer() {
   const [product, setProducts] = useState([]);
-  const id = useParams().id;
+  const { id } = useParams();
 
-  async function getData(){
-    const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-    const datos = await response.json();
-    setProducts(datos)
+  async function getItemsAsync() {
+    const response = await getSingleItem(id);
+    setProducts(response);
   }
-  useEffect(
-    ()=>{
-      getData();
-    },
-    []
-  )
+
+  useEffect(() => {
+    getItemsAsync();
+  }, []);
+
   // precio
-  const num = product.price * 160;
+  const num = Math.trunc(product.price * 160);
   const price = num.toLocaleString('es-AR');
-  // category
-  function productCategory() {
-    if (product.category == "men's clothing") {
-      return( "Hombre" )
-    } else if (product.category == "jewelery") {
-      return( "Joyería" )
-    } else if (product.category == "electronics") {
-      return( "Tecnología" )
-    } else if (product.category == "women's clothing") {
-      return( "Mujer" )
-    }
-  }
-  const category = productCategory();
-  // stock
-  const stock = product.rating;
-  console.log(stock);
+  //cuotas
+  const quota = Math.trunc(num / 6).toLocaleString('es-AR');
+
+  // count
+  const count = Math.floor(Math.random()*(200-100+1)+100);
 
   return (
     <div className="itemDetailContainer">
@@ -44,7 +32,7 @@ function ItemDetailContainer() {
       </div>
       <div className="categoryShare">
         <div className="category">
-          <Link to="/PreEntrega1-Canavire/">Volver al listado</Link><span>{category}</span>  
+          <Link to="/PreEntrega1-Canavire/">Volver al listado</Link><span>{product.category}</span>  
         </div>
         <div className="share">
           <p>Compartir</p><span>Vender uno igual</span>
@@ -53,9 +41,11 @@ function ItemDetailContainer() {
       <ItemDetail
         img={product.image}
         price={price}
+        quotas={quota}
         title={product.title}
         key={product.id}
         url={product.id}
+        count={`(${count})`}
       />
     </div>
   )

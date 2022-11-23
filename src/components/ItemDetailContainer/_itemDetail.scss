@@ -2,15 +2,17 @@
     width: 1184px;
     margin: 0 auto;
     .interestText{
+        color: rgba(0, 0, 0,.9);
         height: 20px;
         margin: 16px 0 24px;
-        color: rgba(0, 0, 0,.9);
         font-size: 14px;
         p{
             font-weight: 700;
+            line-height: 22px;
         }
         span{
             font-weight: 500;
+            line-height: 22px;
         }
     }
     .categoryShare{
@@ -81,12 +83,11 @@
         box-shadow: 0 1px 2px 0 rgb(0 0 0 / 25%);
         .columnLeft{
             .imgProductContainer{
-                padding: 16px 0 0 16px;
-                margin-bottom: 40px;
+                padding: 16px 0 28px 16px;
                 .imgProduct{
                     display: grid;
-                    grid-template-columns: 50px 1fr;
-                    grid-template-rows: 512px;
+                    grid-template-columns: 56px 1fr;
+                    grid-template-rows: 524px;
                     .gallery{
                         width: 50px;
                         height: 100%;
@@ -108,10 +109,10 @@
                         }
                     }
                     .focusImg{
+                        padding: 40px 12px 16px 16px;
                         img{
-                            width: 668px;
-                            height: 472px;
-                            margin: 40px 12px 0 22px;
+                            width: 100%;
+                            height: 100%;
                             object-fit: contain;
                             cursor: zoom-in;
                         }
@@ -127,29 +128,62 @@
         .columnRight{
             margin: 16px 16px 16px 48px;
             .infoProduct{
+                position: relative;
                 width: 100%;
                 height: 100%;
+                padding: 16px;
                 border: 1px solid rgba(0, 0, 0, .1);
                 border-radius: 8px;
-                padding: 16px;
                 .productHeader{
                     span{
+                        display: block;
                         color: rgba(0,0,0,.55);
                         font-size: 14px;
                         font-weight: 500;
+                        line-height: 20px;
                         white-space: pre-wrap;
+                        margin: 0 40px 8px 0;
                     }
                     h1{
                         color: rgba(0, 0, 0, 0.9);
                         font-size: 22px;
                         font-weight: 700;
-                        line-height: 24px;
-                        margin: 8px 28px 8px 0;
+                        line-height: 26px;
+                        margin: 0 28px 8px 0;
+                    }
+                    svg{
+                        width: 22px;
+                        height: 22px;
+                        position: absolute;
+                        top: 44px;
+                        right: 16px;
+                        fill: #3483fa;
+                        cursor: pointer;
+                    }
+                }
+                .rate{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                    svg{
+                        width: 15px;
+                        height: 14px;
+                        margin-right: 3px;
+                        fill: #3483fa;
+                    }
+                    span{
+                        color: #3483fa;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 1.35;
+                        margin-left: 5px;
                     }
                 }
                 .productPrice{
                     .itemPrice{
                         font-size: 36px;
+                        line-height: 36px;
+                        margin-bottom: 4px;
                         .priceSimbol{
                             color: rgba(0,0,0,.9);
                             font-weight: 300;
@@ -158,6 +192,24 @@
                         .price{
                             color: rgba(0,0,0,.9);
                             font-weight: 300;
+                        }
+                    }
+                    .quotas{
+                        p{
+                            color: rgb(0 0 0 / 90%);
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 18px;
+                        }
+                    }
+                    .payment{
+                        color: #3483fa;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-top: 8px;
+                        &:hover{
+                            cursor: pointer;
+                            color: #1f4e96;
                         }
                     }
                 }

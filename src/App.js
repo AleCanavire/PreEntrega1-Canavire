@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemList from './components/ItemListContainer/ItemList';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
         <NavBar />
         <main className="mainHome">
           <Routes>
-            <Route path='PreEntrega1-Canavire/' element={<ItemListContainer/>}/>
-            <Route path='PreEntrega1-Canavire/category/:idCategory' element={<ItemListContainer/>}/>
+            <Route path='PreEntrega1-Canavire/' element={<ItemList/>}/>
+            <Route path='PreEntrega1-Canavire/category/:idCategory' element={<ItemList/>}/>
             <Route path='PreEntrega1-Canavire/detail/:id' element={<ItemDetailContainer/>}/>
           </Routes>
         </main>
