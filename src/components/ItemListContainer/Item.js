@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Item(props) {
   const url = `/PreEntrega1-Canavire/detail/${props.url}`
+  const num = Math.trunc(props.price * 160);
+  const price = num.toLocaleString('es-AR');
   return (
     <div className='itemCard'>
       <div className='item'>
@@ -13,7 +15,7 @@ function Item(props) {
           <div className='itemContent'>
             <div className='itemPrice'>
               <span className='priceSimbol'>$</span>
-              <span className='price'>{props.price}</span>
+              <span className='price'>{price}</span>
             </div>
             <div className='itemTitle'>
               <span>Envío gratis</span> 

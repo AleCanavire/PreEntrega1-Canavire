@@ -6,6 +6,15 @@ import disney from "../../assets/img/disneyStar.webp";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+  const shadowOver = () => {
+    const shadow = document.querySelector('.shadow');
+    shadow.style.opacity = "0.3"
+  }
+  const shadowOut = () => {
+    const shadow = document.querySelector('.shadow');
+    shadow.style.opacity = "0"
+  }
+
   return (
     <nav className='nav'>
       <div className='navContainer'>
@@ -30,7 +39,7 @@ function NavBar() {
         </div>
         <div className='categories'>
           <ul>
-            <li>
+            <li onMouseOver={shadowOver} onMouseOut={shadowOut}>
               <span>Categorías</span>
               <div className='allCategories'>
                 <a href='#'>Vehículos</a>

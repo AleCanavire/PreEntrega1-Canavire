@@ -5,12 +5,12 @@ function getItems(idCategory) {
     if (idCategory === undefined) {
       setTimeout(() => {
         resolve(products);
-      }, 500);
+      }, 1500);
     } else {
       setTimeout(() => {
         const categoryProducts = products.filter((product) => product.category === idCategory);
         resolve(categoryProducts);
-      }, 500);
+      }, 1500);
     }
   });
 }
@@ -20,7 +20,7 @@ export function getSingleItem(idParam) {
     const productRequested = products.find((product)=> product.id === Number(idParam))
     setTimeout(() => {
       resolve(productRequested);
-    }, 500);
+    }, 1500);
   });
 }
 

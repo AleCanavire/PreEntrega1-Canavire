@@ -1,53 +1,56 @@
-import React, { useState, useEffect } from "react";
-import ItemDetail from "../ItemDetailContainer/ItemDetail";
+import React, { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
-import { getSingleItem } from "../../services/mockService"
+import { getSingleItem } from "../../services/firestore";
+import { cartContext } from "../../context/cartContext";
+import ItemDetail from "../ItemDetailContainer/ItemDetail";
+import ItemDetailSkeleton from "./ItemDetailSkeleton";
+import AddedToCart from "./AddedToCart";
 
 function ItemDetailContainer() {
   const [product, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
 
   async function getItemsAsync() {
-    const response = await getSingleItem(id);
-    setProducts(response);
+    getSingleItem(id).then(response => {
+      setProducts(response);
+      setIsLoading(false)
+    })
   }
 
   useEffect(() => {
     getItemsAsync();
   }, []);
 
-  // precio
-  const num = Math.trunc(product.price * 160);
-  const price = num.toLocaleString('es-AR');
-  //cuotas
-  const quota = Math.trunc(num / 6).toLocaleString('es-AR');
+  const myContext = useContext(cartContext);
+  let productIsInCart = myContext.isInCart(product.id);
 
-  // count
-  const count = Math.floor(Math.random()*(200-100+1)+100);
+  // precio
+  const price = Math.trunc(product.price * 160);
 
   return (
-    <div className="itemDetailContainer">
-      <div className="interestText">
-        <p>También puede interesarte: <span>algo</span></p>
-      </div>
-      <div className="categoryShare">
-        <div className="category">
-          <Link to="/PreEntrega1-Canavire/">Volver al listado</Link><span>{product.category}</span>  
+    <>
+      { productIsInCart &&
+      <AddedToCart
+      title={product.title}
+      price={(Math.trunc(price * productIsInCart.quantity)).toLocaleString("es-AR")}
+      quantity={productIsInCart.quantity}
+      image={product.image}/>}
+      <div className="itemDetailContainer">
+        <div className="interestText">
+          <p>También puede interesarte: <span>algo</span></p>
         </div>
-        <div className="share">
-          <p>Compartir</p><span>Vender uno igual</span>
+        <div className="categoryShare">
+          <div className="category">
+            <Link to="/PreEntrega1-Canavire/">Volver al listado</Link><span>{product.category}</span>  
+          </div>
+          <div className="share">
+            <p>Compartir</p><span>Vender uno igual</span>
+          </div>
         </div>
+        {isLoading ? <ItemDetailSkeleton/> : <ItemDetail product={product}/>}
       </div>
-      <ItemDetail
-        img={product.image}
-        price={price}
-        quotas={quota}
-        title={product.title}
-        key={product.id}
-        url={product.id}
-        count={`(${count})`}
-      />
-    </div>
+    </>
   )
 }
 

@@ -6,10 +6,8 @@ const products =
 		"id": 1,
 		"image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
 		"price": 109.95,
-		"rating": {
-			"rate": 3.9,
-			"count": 120
-		},
+		"count": 120,
+		"rate": 3.9,
 		"title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
 	},
 	{
@@ -18,10 +16,8 @@ const products =
 		"id": 2,
 		"image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
 		"price": 22.3,
-		"rating": {
-			"rate": 4.1,
-			"count": 259
-		},
+		"count": 259,
+		"rate": 4.1,
 		"title": "Mens Casual Premium Slim Fit T-Shirts "
 	},
 	{
@@ -30,10 +26,8 @@ const products =
 		"id": 3,
 		"image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
 		"price": 55.99,
-		"rating": {
-			"rate": 4.7,
-			"count": 500
-		},
+		"count": 500,
+		"rate": 4.7,
 		"title": "Mens Cotton Jacket"
 	},
 	{
@@ -42,10 +36,8 @@ const products =
 		"id": 4,
 		"image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
 		"price": 15.99,
-		"rating": {
-			"rate": 2.1,
-			"count": 430
-		},
+		"count": 430,
+		"rate": 4.1,
 		"title": "Mens Casual Slim Fit"
 	},
 	{
@@ -54,10 +46,8 @@ const products =
 		"id": 5,
 		"image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
 		"price": 695,
-		"rating": {
-			"rate": 4.6,
-			"count": 400
-		},
+		"count": 400,
+		"rate": 4.6,
 		"title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet"
 	},
 	{
@@ -66,10 +56,8 @@ const products =
 		"id": 6,
 		"image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
 		"price": 168,
-		"rating": {
-			"rate": 3.9,
-			"count": 70
-		},
+		"count": 70,
+		"rate": 3.9,
 		"title": "Solid Gold Petite Micropave "
 	},
 	{
@@ -78,10 +66,8 @@ const products =
 		"id": 7,
 		"image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
 		"price": 9.99,
-		"rating": {
-			"rate": 3,
-			"count": 400
-		},
+		"count": 400,
+		"rate": 4.2,
 		"title": "White Gold Plated Princess"
 	},
 	{
@@ -90,10 +76,8 @@ const products =
 		"id": 8,
 		"image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
 		"price": 10.99,
-		"rating": {
-			"rate": 1.9,
-			"count": 100
-		},
+		"count": 100,
+		"rate": 3.9,
 		"title": "Pierced Owl Rose Gold Plated Stainless Steel Double"
 	},
 	{
@@ -102,10 +86,8 @@ const products =
 		"id": 9,
 		"image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
 		"price": 64,
-		"rating": {
-			"rate": 3.3,
-			"count": 203
-		},
+		"count": 203,
+		"rate": 4.3,
 		"title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 "
 	},
 	{
@@ -114,10 +96,8 @@ const products =
 		"id": 10,
 		"image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
 		"price": 109,
-		"rating": {
-			"rate": 2.9,
-			"count": 470
-		},
+		"count": 470,
+		"rate": 4.9,
 		"title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s"
 	},
 	{
@@ -126,10 +106,8 @@ const products =
 		"id": 11,
 		"image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
 		"price": 109,
-		"rating": {
-			"rate": 4.8,
-			"count": 319
-		},
+		"count": 319,
+		"rate": 4.8,
 		"title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5"
 	},
 	{
@@ -138,10 +116,8 @@ const products =
 		"id": 12,
 		"image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
 		"price": 114,
-		"rating": {
-			"rate": 4.8,
-			"count": 400
-		},
+		"count": 400,
+		"rate": 4.8,
 		"title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive"
 	},
 	{
@@ -150,10 +126,8 @@ const products =
 		"id": 13,
 		"image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
 		"price": 599,
-		"rating": {
-			"rate": 2.9,
-			"count": 250
-		},
+		"count": 250,
+		"rate": 4.9,
 		"title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin"
 	},
 	{
@@ -162,10 +136,8 @@ const products =
 		"id": 14,
 		"image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
 		"price": 999.99,
-		"rating": {
-			"rate": 2.2,
-			"count": 140
-		},
+		"count": 140,
+		"rate": 4.2,
 		"title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED "
 	},
 	{
@@ -174,10 +146,8 @@ const products =
 		"id": 15,
 		"image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
 		"price": 56.99,
-		"rating": {
-			"rate": 2.6,
-			"count": 235
-		},
+		"count": 235,
+		"rate": 4.6,
 		"title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats"
 	},
 	{
@@ -186,10 +156,8 @@ const products =
 		"id": 16,
 		"image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
 		"price": 29.95,
-		"rating": {
-			"rate": 2.9,
-			"count": 340
-		},
+		"count": 340,
+		"rate": 4.9,
 		"title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket"
 	},
 	{
@@ -198,10 +166,8 @@ const products =
 		"id": 17,
 		"image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
 		"price": 39.99,
-		"rating": {
-			"rate": 3.8,
-			"count": 679
-		},
+		"count": 679,
+		"rate": 3.8,
 		"title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats"
 	},
 	{
@@ -210,10 +176,8 @@ const products =
 		"id": 18,
 		"image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
 		"price": 9.85,
-		"rating": {
-			"rate": 4.7,
-			"count": 130
-		},
+		"count": 130,
+		"rate": 4.7,
 		"title": "MBJ Women's Solid Short Sleeve Boat Neck V "
 	},
 	{
@@ -222,10 +186,8 @@ const products =
 		"id": 19,
 		"image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
 		"price": 7.95,
-		"rating": {
-			"rate": 4.5,
-			"count": 146
-		},
+		"count": 146,
+		"rate": 4.5,
 		"title": "Opna Women's Short Sleeve Moisture"
 	},
 	{
@@ -234,10 +196,8 @@ const products =
 		"id": 20,
 		"image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
 		"price": 12.99,
-		"rating": {
-			"rate": 3.6,
-			"count": 145
-		},
+		"count": 145,
+		"rate": 3.6,
 		"title": "DANVOUY Womens T Shirt Casual Cotton Short"
 	}
 ];
