@@ -8,11 +8,13 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const shadowOver = () => {
     const shadow = document.querySelector('.shadow');
-    shadow.style.opacity = "0.3"
+    shadow.style.opacity = "0.3";
+    shadow.style.zIndex = "2";
   }
   const shadowOut = () => {
     const shadow = document.querySelector('.shadow');
-    shadow.style.opacity = "0"
+    shadow.style.opacity = "0";
+    shadow.style.zIndex = "0";
   }
 
   return (
